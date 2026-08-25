@@ -1,0 +1,6 @@
+{
+  "name": "Kaiçara Burger",
+  "description": "Landing page moderna e imersiva para a hamburgueria artesanal Kaiçara Burger em Caraguatatuba - SP, com Three.js 3D, GSAP e tema Frosted Glass.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

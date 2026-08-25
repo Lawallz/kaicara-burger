@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, .font-syne {
+    font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom frosted glass & glow styling utilities */
+.frosted-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.frosted-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.frosted-card-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(249, 115, 22, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(249, 115, 22, 0.15);
+  transform: translateY(-3px);
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.85);
+  color: transparent;
+}
+
+.text-stroke-orange {
+  -webkit-text-stroke: 1.5px rgba(249, 115, 22, 0.9);
+  color: transparent;
+}
+
+.glow-orange {
+  box-shadow: 0 0 25px rgba(249, 115, 22, 0.45);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.35);
+}
+
+/* High Contrast Mode for Visually Impaired Users (Preserving Dark Mode) */
+.high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .text-white\/60,
+.high-contrast .text-white\/70,
+.high-contrast .text-white\/50,
+.high-contrast .text-white\/40 {
+  color: #e5e7eb !important;
+}
+
+.high-contrast .border-white\/10,
+.high-contrast .border-white\/15,
+.high-contrast .border-white\/5 {
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.high-contrast .bg-white\/5,
+.high-contrast .bg-white\/\[0\.03\],
+.high-contrast .bg-white\/\[0\.02\] {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.high-contrast button, 
+.high-contrast a {
+  outline-color: #f97316 !important;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
